@@ -1,0 +1,26 @@
+POST http://localhost:8080/number
+Content-Type: application/json
+
+{
+  "number": "1234567",
+  "telOperator": {
+    "id": 1
+  },
+  "teleBook": {
+    "id": 1
+  }
+}
+
+###
+DELETE http://localhost:8080/number/1
+
+###
+GET http://localhost:8080/number/findById/1
+
+###
+GET http://localhost:8080/number/findByNumber/1234567
+
+###
+GET http://localhost:8080/number/findNumberByTeleBookId/1
+
+###

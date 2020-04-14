@@ -1,0 +1,17 @@
+POST http://localhost:8080/telOperator
+Content-Type: application/json
+
+{
+  "name":"life"
+}
+
+###
+DELETE http://localhost:8080/telOperator/deleteId/1
+
+###
+POST http://localhost:8080/telOperator/update/telOperator/1?name=mts
+
+###
+GET http://localhost:8080/telOperator/find/mts
+
+###

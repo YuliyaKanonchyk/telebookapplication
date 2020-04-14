@@ -1,0 +1,27 @@
+POST http://localhost:8080/city
+Content-Type: application/json
+
+{
+  "name": "Minsk",
+  "country": "BY"
+}
+
+###
+POST http://localhost:8080/city
+Content-Type: application/json
+
+{
+  "name": "Brest",
+  "country": "BY"
+}
+
+###
+DELETE http://localhost:8080/city/deleteId/1
+
+###
+POST http://localhost:8080/city/update/city/1?name=Brrest
+
+###
+POST http://localhost:8080/city/update/country/1?country=France
+
+###

@@ -1,0 +1,19 @@
+POST http://localhost:8080/teleBook
+Content-Type: application/json
+
+{
+  "name": "Brrest",
+  "city": {
+    "id": 1
+  }
+}
+###
+DELETE http://localhost:8080/teleBook/1
+
+###
+POST http://localhost:8080/teleBook/update/teleBook/1?name=Brest
+
+###
+GET http://localhost:8080/teleBook/findAllNumbers/1
+
+###

@@ -1,0 +1,56 @@
+POST http://localhost:8080/abonent
+Content-Type: application/json
+
+{
+  "abonentName": "Vasia",
+  "abonentSurname": "Pupkin",
+  "number": {
+    "id": 1
+  },
+  "city": {
+    "id": 1
+  },
+  "telOperator": {
+    "id": 1
+  },
+  "teleBook": {
+    "id": 1
+  }
+}
+
+###
+DELETE http://localhost:8080/abonent/delete/ById/1
+
+###
+DELETE http://localhost:8080/abonent/delete/ByNameAndSurName/Vasia/Pupkin
+
+###
+POST http://localhost:8080/abonent/updateAbonentById/name/1?newName=Boris
+
+###
+POST http://localhost:8080/abonent/updateAbonentById/surname/1?newSurname=Petrov
+
+###
+POST http://localhost:8080/abonent/updateAbonentById/city/1
+Content-Type: application/json
+
+{
+  "name": "Vitebsk",
+  "country": "BY"
+}
+
+###
+POST http://localhost:8080/abonent/updateAbonentById/number/1
+Content-Type: application/json
+
+{
+  "number": "1234967",
+  "telOperator": {
+    "id": 1
+  },
+  "teleBook": {
+    "id": 1
+  }
+}
+
+###

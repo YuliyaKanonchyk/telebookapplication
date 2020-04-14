@@ -1,0 +1,36 @@
+POST http://localhost:8080/user/registration
+Content-Type: application/json
+
+{
+  "login":"VasiaLogin",
+  "password":"12345",
+  "firstName":"Vasia",
+  "lastName":"Pupkin"
+}
+
+###
+
+POST http://localhost:8080/user/login?login=VasiaLogin&password=12345
+
+###
+GET http://localhost:8080/user/getUserBy/id/1
+
+###
+GET http://localhost:8080/user/getUserBy/login/VasiaLogin
+
+###
+GET http://localhost:8080/user/getUserBy/firstName//Vasia
+
+###
+GET http://localhost:8080/user/getUserBy/lastName/Pupkin
+
+###
+POST http://localhost:8080/user/update/firstName/VasiaLogin?firstName=Fedia
+
+###
+POST http://localhost:8080/user/update/lastName/VasiaLogin?lastName=Morozov
+
+###
+POST http://localhost:8080/user/update/password/VasiaLogin?password=7777
+
+###
